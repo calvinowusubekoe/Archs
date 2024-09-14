@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.nav-icons {
+  margin: 5px;
+  display: flex;
+  gap: 210x;
+}
+
+.nav-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  position: sticky;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  padding-top: 35px;
+  transition: top 0.3s;
+}
+
+.main-nav-items a {
+  text-decoration: none;
+  color: white;
+  float: left;
+}
+
+.main-nav-items {
+  display: flex;
+  gap: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-bar {
+  background-image: url(/images/hero.png);
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text {
+  align-items: center;
+  text-align: center;
+  margin-top: 210px;
+}
+
+.text h2 {
+  font-size: 80px;
+  color: white;
+}
+
+.text p {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 800px;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hero-img {
+  height: 52px;
+  width: 52px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 30px 40px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-text h5 {
+  font-size: 25px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-img {
+  width: 65%;
+  margin-left: 105px;
+}
+
+.about-text {
+  width: 40%;
+  margin-right: 100px;
+  margin-left: -100px;
+  text-align: left;
+}
+
+.about-text h6 {
+  color: #ff2d00;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-text h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+
+.check-mark span {
+  font-size: 20px;
+  color: #28a745;
+}
+
+.check-mark {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  opacity: 1;
+  transition: 0.3s;
+  font-weight: bold;
+  height: 45px;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.team {
+  margin-top: 120px;
+}
+
+.team-head {
+  text-align: center;
+}
+
+.team-head h6 {
+  color: #ff2d00;
+  font-size: 20px;
+}
+
+.team-head h3 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.team-head p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.team-img-1 {
+  width: 350px;
+  margin: 50px;
+}
+
+.team-image {
+  width: 350px;
+}
+
+.team-img-1 h5 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.team-img-1 h6 {
+  font-size: 20px;
+  color: #ff2d00;
+  margin-top: 8px;
+}
+
+.team-img-1 p {
+  font-size: 19px;
+  font-weight: lighter;
+  margin-top: 8px;
+}
+
+
+.pricing {
+  margin-top: 100px;
+}
+
+.price-head {
+  text-align: center;
+}
+
+.price-head h5 {
+  font-size: 20px;
+  color: #ff2d00;
+  margin: 20px;
+}
+
+.price-head h3 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.price-head p {
+  font-size: 20px;
+  margin: 20px;
+}
+
